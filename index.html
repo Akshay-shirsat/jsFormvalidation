@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Information Form</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Personal Information Form</h2>
+        <form id="personalInfoForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+
+            <br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+        <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <br>
+
+            <input type="button" value="Next" onclick="validatePersonalInfo()">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
